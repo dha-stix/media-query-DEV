@@ -1,0 +1,81 @@
+/* ------  GENERAL STYLING ----- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav, footer {
+    background-color: #F9F9F9;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+
+}
+.hero {
+    display: flex;
+    flex-basis: 100%;
+    height: 90vh;
+}
+.hero > aside {
+    flex-basis: 40%;
+    background-color: #CDF0EA;
+}
+.hero > section {
+    flex-basis: 60%;
+    background-color: #F7DBF0;
+}
+.hero > aside, .hero > section, .about > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.about {
+    display: flex;
+    flex-basis: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.about > div {
+    flex-basis: 33.33%;
+}
+#first {
+    background-color: rgb(125, 79, 170);
+}
+#second {
+    background-color: #fff;
+}
+#third {
+    background-color: #BEAEE2;
+}
+/* ------  END OF GENERAL STYLING ----- */
+
+
+/* ------  RESPONSIVENESS STYLING ----- */
+/* For tablets */
+@media screen and (max-width : 992px) {
+    .about {
+        flex-direction: column;
+    }
+    .about > div {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    #first {
+        background-color: rgb(30, 20, 39);
+    }
+    #second {
+        background-color: #fff;
+    }
+    #third {
+        background-color: #301f57;
+    }
+
+/* For mobile devices */
+    .hero {
+        flex-direction: column;
+    }
+
+}
